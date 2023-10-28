@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Area Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To Area Calculator</h1>
+        <form>
+            <select id="calcType">
+                <option value="" selected>Select</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="trapezium">Trapezium</option>
+                <option value="parallelogram">Parallelogram</option>
+                <option value="triangle">Triangle</option>
+            </select>
+            <div class="inputBox" id="inputBox1">
+                <input type="number" id="length" placeholder="Length">
+                <input type="number" id="breadth" placeholder="Breadth">
+            </div>
+            <div class="inputBox" id="inputBox2">
+                <input type="number" id="base1" placeholder="Base 1">
+                <input type="number" id="base2" placeholder="Base 2">
+                <input type="number" id="height" placeholder="Height">
+            </div>
+            <div class="inputBox" id="inputBox3">
+                <input type="number" id="parallelogramBase" placeholder="Base">
+                <input type="number" id="parallelogramHeight" placeholder="Height">
+            </div>
+            <div class="inputBox" id="inputBox4">
+                <input type="number" id="triangleBase" placeholder="Base">
+                <input type="number" id="triangleHeight" placeholder="Height">
+            </div>
+            <button type="button" id="btn">Calculate Area</button>
+            <p id="result"></p>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
